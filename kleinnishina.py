@@ -1,14 +1,14 @@
 """
 A program designed for drawing functions in polar coordiante system
 """
-
+import matplotlib
+matplotlib.use
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.constants
-import matplotlib as mpl
 
 #set the style of fig
-#mpl.style.use('default')
+plt.style.use('seaborn-bright')
 
 #Angle theta runs from 0 to 2 pi (radians)
 theta = np.linspace(0, 2*np.pi, 1000)  
@@ -32,7 +32,7 @@ plt.plot(theta, Function(theta, 1460), color ="b", label="1460 keV", linestyle='
 plt.plot(theta, Function(theta, 6000), color ="g", label="6000 keV", linestyle='-', linewidth=3)
 
 #Sets the location for the label
-plt.legend(loc='best')
+plt.legend(loc='lower left', title = 'Incident photon energies', shadow=True)
 
 #title of the fig
 plt.title("Klein-Nishina formula")   
