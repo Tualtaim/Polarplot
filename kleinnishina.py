@@ -2,7 +2,6 @@
 A program designed for drawing functions in polar coordiante system
 """
 import matplotlib
-matplotlib.use
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.constants

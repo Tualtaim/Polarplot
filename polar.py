@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib as mpl
 
 #set the style of fig
-#mpl.style.use('default')
+plt.style.use('default')
 
 #Angle theta runs from 0 to 2 pi (radians)
 theta = np.linspace(0, 2*np.pi, 1000)  
